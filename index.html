@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino UNO Documentation</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2, h3 { color: #333; }
+        img { max-width: 100%; height: auto; }
+        pre { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Arduino UNO Documentation</h1>
+    <p>The Arduino UNO is a microcontroller board based on the ATmega328P. It is widely used for creating interactive projects and is suitable for beginners and experts alike.</p>
+    
+    <h2>Images</h2>
+    <img src="path/to/arduino-uno-image.jpg" alt="Arduino UNO">
+
+    <h2>Pin Descriptions</h2>
+    <ul>
+        <li><strong>Digital Pins (0-13):</strong> Maximum current 20 mA.</li>
+        <li><strong>Analog Pins (A0-A5):</strong> Voltage range 0-5V.</li>
+        <li><strong>Power Pins:</strong> 
+            <ul>
+                <li><strong>Vin:</strong> Input voltage (recommended 7-12V).</li>
+                <li><strong>GND:</strong> Ground.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Communication Protocols</h2>
+    <p>The Arduino UNO supports the following communication methods:</p>
+    <ul>
+        <li>UART (Serial Communication)</li>
+        <li>I2C (Inter-Integrated Circuit)</li>
+        <li>SPI (Serial Peripheral Interface)</li>
+    </ul>
+
+    <h2>Programming Examples</h2>
+    <h3>Blink Example</h3>
+    <pre><code>void setup() {
+    pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(1000);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(1000);
+}</code></pre>
+
+    <h2>Applications</h2>
+    <p>Common applications of Arduino UNO:</p>
+    <ul>
+        <li>Home automation</li>
+        <li>Robotics projects</li>
+        <li>Sensor data acquisition</li>
+    </ul>
+
+    <h2>Safety Guidelines</h2>
+    <p>Please adhere to the following safety guidelines:</p>
+    <ul>
+        <li>Ensure proper power supply to avoid damage.</li>
+        <li>Do not exceed maximum current ratings for pins.</li>
+    </ul>
+
+    <h2>Troubleshooting</h2>
+    <p>Common issues and solutions:</p>
+    <ul>
+        <li><strong>Issue:</strong> Board not recognized. <strong>Solution:</strong> Check USB connection and drivers.</li>
+        <li><strong>Issue:</strong> Code not uploading. <strong>Solution:</strong> Ensure the correct board and port are selected.</li>
+    </ul>
+</body>
+</html>
